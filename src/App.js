@@ -1,15 +1,16 @@
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { AuthProvider } from './context/AuthContext';
 import './App.css';
-import Navbar from './components/navbar';
+import ProtectedRoutes from './routes/ProtectedRoutes';
 
 function App() {
   return (
-    <>
-    <Navbar />
-    <div>
-      <h1>Swift Supply</h1>
-    </div>
-    </>
-    
+    <AuthProvider>
+      <Router>
+        <ProtectedRoutes /> 
+      </Router>
+    </AuthProvider>
   );
 }
 
