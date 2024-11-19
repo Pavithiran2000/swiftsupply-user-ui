@@ -1,0 +1,175 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+.header
+{
+    width: 100%;
+    background-color: #fcfcfc;
+}
+
+.header .top_header
+{
+    display: flex;
+    padding: 10px;
+    max-width: 100%;
+    background-color: inherit;
+}
+.header .top_header .logo
+{
+    float: left;
+    width: 25%;
+}
+.header .top_header .logo img
+{
+    cursor: pointer;
+    object-fit: cover;
+    width: 125px;
+    vertical-align: bottom;
+}
+.header .top_header .right_box {
+    float: right;
+    display: flex;
+    width: -webkit-fill-available;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header .top_header .right_box .search_box {
+    border: none;
+    background: #e6e6e6;
+    height:fit-content;
+    width: 85%;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+.header .top_header .right_box .search_box button
+{
+    padding: 5px 10px 5px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 40px;
+    background: inherit;
+    color: #838383;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 20px;
+    font-weight: 600;
+    vertical-align: middle;
+}
+.header .top_header .right_box .search_box button:hover
+{
+    background: #cccccc;
+    color: #ececec;
+}
+.header .top_header .right_box .search_box input
+{
+    padding: 10px;
+    outline: none;
+    border: none;
+    background: inherit;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 90%;
+}
+
+.header .top_header .right_box .icon_box
+{
+    display: flex;
+    margin: 0 10px;
+    align-items: center;
+    height:fit-content
+}
+.header .top_header .right_box .icon_box .icon
+{
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.header .last_header
+{
+    width: 100%;
+    padding: 0 0 20px;
+    display: flex;
+    background-color: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    justify-content: space-between;
+}
+.header .last_header .category_box {
+    display: flex;
+    float: left;
+    width: 30%;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.header .last_header .category_box .dd_box {
+    display: flex;
+    padding: 5px 10px;
+    margin: 0 10px;
+    justify-content: space-evenly;
+    width:fit-content;
+    border: 1px solid #000;
+    border-radius: 30px;
+}
+.header .last_header .category_box .dd_box .icon {
+    margin: 0 5px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+.header .last_header .category_box .dd_box .txt {
+    margin: 0 20px 0 15px;
+}
+.header .last_header .nav_box {
+    float: right;
+    display: flex;
+    width: -webkit-fill-available;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header .last_header .nav_box .nav
+{
+    margin: 0 10px;
+}
+.header .last_header .nav_box .nav ul
+{
+    display: flex;
+}
+.header .last_header .nav_box .nav ul .dd_box
+{
+    display: flex;
+    margin: 0 10px;
+    justify-content: space-evenly;
+    width:fit-content;
+}
+.header .last_header .nav_box .nav ul .dd_box .txt
+{
+    margin: 0 0 0 10px;
+}
+.header .last_header .nav_box .nav ul .dd_box .icon
+{
+    margin: 0 10px 0 5px;
+    display: inline-flex;
+    align-items: center;
+}
+.header .last_header .nav_box .nav ul li
+{
+    list-style: none;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #1b1b1b;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 924px) {}
+@media screen and (max-width: 924px) {}
