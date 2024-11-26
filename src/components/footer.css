@@ -1,0 +1,164 @@
+/* Footer Styling */
+.footer {
+    background-color: #faf8f5;
+    color: rgb(0, 0, 0);
+    padding: 20px 15px;
+    
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Footer Logo Section */
+  .footer-logo {
+    flex: 1 1 300px;
+    text-align: left;
+    margin-top: 50px;
+  }
+  
+  .logo-image {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+
+  
+  .footer-logo p {
+    
+    margin-bottom: 10px;
+    width: 250px;
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    display:flexbox;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-icons a {
+    color: #000000;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding-right: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #21a1f1;
+  }
+  
+  /* Footer Links Section */
+  .footer-links {
+    flex: 1 1 200px;
+    text-align: left;
+    margin-top: 50px;
+  }
+  
+  .footer-links h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin: 5px 0;
+  }
+  
+  .footer-links a {
+    color: #141414;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer Contact Section */
+  .footer-contact {
+    flex: 1 1 200px;
+    text-align: left;
+    margin-top: 50px;
+    
+  }
+  
+  .footer-contact h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .footer-contact p {
+    margin: 5px 0;
+  }
+  
+  /* Footer Bottom Section */
+  .footer-bottom {
+    flex: 1 1 400px;
+    text-align: left;
+
+    
+  }
+  .footer-bottom P{
+    margin-bottom: 5px;
+    width: 300px;
+  }
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-logo, .footer-links, .footer-contact {
+      text-align: center;
+      flex: 1 1 100%;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+    .logo-image {
+      /* Make the image a block-level element */
+        margin-left: auto;    /* Automatically add left margin */
+        margin-right: auto;   /* Automatically add right margin */          
+      }
+      .footer-logo p {
+
+        text-align: center;
+        justify-content:center;
+        margin-bottom: 10px;
+        margin-left: auto;    /* Automatically add left margin */
+        margin-right: auto; 
+      }
+  }
+  .footer-divider {
+    border: 0;
+    border-top: 1px solid #bbb5b5; /* Blue color for the divider */
+    width: 90%; /* Make the divider width smaller */
+    margin: 20px auto; /* Center the divider with some space around */
+  }
+  @media (max-width: 480px) {
+    .footer {
+      font-size: 0.9em;
+    }
+  
+    .footer-bottom {
+      font-size: 0.8em;
+    }
+  
+    .social-icons a {
+      font-size: 1.2em;
+    }
+  }
+  
