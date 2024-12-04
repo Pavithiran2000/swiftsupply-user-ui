@@ -7,8 +7,24 @@ export const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
+  // Mock login function (replace with your API logic)
+  const login = (email, password) => {
+    
+    if (email === "test@test.com" && password === "123") {
+      setUser({ email }); 
+      return true; 
+    }
+    return false; //false
+  };
+  
+
+  // Mock logout function
+  const logout = () => {
+    setUser(null); 
+  };
+
   return (
-    <AuthContext.Provider value={{ user, setUser }}>
+    <AuthContext.Provider value={{ user, login, logout }}>
       {children}
     </AuthContext.Provider>
   );
